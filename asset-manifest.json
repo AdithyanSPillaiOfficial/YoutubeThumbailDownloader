@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/YoutubeThumbailDownloader/static/css/main.35d9a83a.css",
+    "main.js": "/YoutubeThumbailDownloader/static/js/main.68e7acc0.js",
+    "static/js/787.4f250520.chunk.js": "/YoutubeThumbailDownloader/static/js/787.4f250520.chunk.js",
+    "index.html": "/YoutubeThumbailDownloader/index.html",
+    "main.35d9a83a.css.map": "/YoutubeThumbailDownloader/static/css/main.35d9a83a.css.map",
+    "main.68e7acc0.js.map": "/YoutubeThumbailDownloader/static/js/main.68e7acc0.js.map",
+    "787.4f250520.chunk.js.map": "/YoutubeThumbailDownloader/static/js/787.4f250520.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35d9a83a.css",
+    "static/js/main.68e7acc0.js"
+  ]
+}
