@@ -1,5 +1,11 @@
+
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +41,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inputurl {
+  width: 45vw;
+  background-color: transparent;
+  padding: 20px;
+  font-size:17px;
+  color: white;
+  border-radius: 20px;
+  border-color: white;
+  outline: none;
+
+}
+
+.submitbtn {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: transparent;
+  border: 2px solid red; /* Simplified border property */
+  outline: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 17px;
+  transition: background-color 0.3s ease; /* Smooth transition for background-color */
+}
+
+.submitbtn:hover {
+  background-color: red;
 }
