@@ -55,7 +55,7 @@ const handleDownloadThumbnail = async (imgUrl, videoId) => {
         URL.revokeObjectURL(blobUrl);
       } catch (error) {
         console.error('Error creating object URL or initiating download:', error);
-        alert(error);
+        alert("Error Occured. Long Press the image to save the image");
       }
     }, 'image/png'); // Specify the MIME type for the blob, in this case, image/png
   } catch (error) {
