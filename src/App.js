@@ -74,36 +74,10 @@ function App() {
     <div className="App">
       <h1>Youtube Thumbnail Downloader</h1>
       <input type="text" placeholder='Enter Youtube URL' value={url} onChange={(e)=>setUrl(e.target.value)} className='inputurl'/>
-      <button className='submitbtn' onClick={ async ()=>{
+      <button className='submitbtn' onClick={()=>{
         videoId = extractYouTubeVideoId(url);
         imgUrl = "https://img.youtube.com/vi/"+videoId+"/maxresdefault.jpg";
-        try {
-          // Replace 'YOUR_IMAGE_URL' with the actual image URL
-          const response = await fetch(imgUrl, { mode: 'no-cors'});
-          
-          // Check if the request was successful (status code 2xx)
-          if (!response.ok) {
-            throw new Error('Failed to fetch image');
-          }
-    
-          // Convert the image to a Blob
-          const blob = await response.blob();
-    
-          // Create a URL for the Blob
-          const objectURL = URL.createObjectURL(blob);
-    
-          // Set the URL for displaying the image
-          setImg(objectURL);
-    
-          // Create a link for downloading the image
-          const link = document.createElement('a');
-          link.href = objectURL;
-          link.download = 'downloaded_image.png';
-          link.click();
-        } catch (error) {
-          console.error('Error downloading image:', error);
-          alert('Failed to download image');
-        }
+        setImg(imgUrl);
         setToggleImage(true);
 
       }}>Get Thumbnail</button>
