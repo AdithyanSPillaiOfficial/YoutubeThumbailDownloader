@@ -79,7 +79,7 @@ function App() {
         imgUrl = "https://img.youtube.com/vi/"+videoId+"/maxresdefault.jpg";
         try {
           // Replace 'YOUR_IMAGE_URL' with the actual image URL
-          const response = await fetch(imgUrl);
+          const response = await fetch(imgUrl, { mode: 'no-cors'});
           
           // Check if the request was successful (status code 2xx)
           if (!response.ok) {
