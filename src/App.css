@@ -70,3 +70,19 @@
 .submitbtn:hover {
   background-color: red;
 }
+
+.imgdlbtn{
+  width: 20vw;
+  padding: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 17ppx;
+  outline-color: greenyellow;
+  transition: background-color 0.3s ease;
+
+}
+
+.imgdlbtn:hover {
+  background-color: greenyellow;
+}
