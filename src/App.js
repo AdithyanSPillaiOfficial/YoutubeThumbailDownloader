@@ -81,7 +81,7 @@ function App() {
         setToggleImage(true);
 
       }}>Get Thumbnail</button>
-      {toggleImage && <div><img src={img} alt='Thumbnail' id='thumbnail'/>
+      {toggleImage && <div style={{display: 'flex',flexDirection: 'column'}}><img src={img} alt='Thumbnail' id='thumbnail'/>
       <button className='imgdlbtn' onClick={ async ()=> { await handleDownloadThumbnail(img,extractYouTubeVideoId(url))}}>Download Image</button></div>}
     </div>
   );

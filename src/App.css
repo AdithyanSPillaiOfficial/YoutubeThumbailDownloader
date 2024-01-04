@@ -65,6 +65,7 @@
   color: white;
   font-size: 17px;
   transition: background-color 0.3s ease; /* Smooth transition for background-color */
+  margin: 20px;
 }
 
 .submitbtn:hover {
@@ -73,16 +74,24 @@
 
 .imgdlbtn{
   width: 20vw;
-  padding: 20px;
-  height: 20px;
+  height: 60px;
   background-color: transparent;
   border-radius: 20px;
-  font-size: 17ppx;
-  outline-color: greenyellow;
-  transition: background-color 0.3s ease;
+  font-size: 17px;
+  border-color: greenyellow;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  outline: none;
+  font-size: 17px;
+  color: white;
+  margin: 20px;
+
 
 }
 
 .imgdlbtn:hover {
   background-color: greenyellow;
+  color: black;
 }
